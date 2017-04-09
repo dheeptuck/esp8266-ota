@@ -208,7 +208,7 @@ $(OUTPUT_1): $(TARGET_OUT_1)
 	$(vecho) "FW $@"
 	$(Q) $(ESPTOOL) elf2image $(ESPTOOL_FLASHDEF) $< -o $@
 
-$(OUTPUT_2): $(TARGET_OUT_1)
+$(OUTPUT_2): $(TARGET_OUT_2)
 	$(vecho) "FW $@"
 	$(vecho) "FW $<"
 	$(Q) $(ESPTOOL) elf2image $(ESPTOOL_FLASHDEF) $< -o $@
